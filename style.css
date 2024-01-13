@@ -15,6 +15,8 @@
 }
 header {
   background: rgba(255, 144, 14, 0.1);
+  
+  
 }
 
 nav {
@@ -55,32 +57,65 @@ nav li a {
   color: #727272;
 }
 .banner-image {
-  margin-top: 20px; 
+  margin-top: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
- 
+
 }
+/* team section stayl start here */
+.team-container {
+  display: flex;
+  align-items: center;
+}
+.team-image-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+}
+.team-contant{
+    padding: 0 70px;
+}
+.team-title{
+    font-size: 2.8rem;
+}
+
+.team-title .quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.team-title .text-features{
+    color:#FF900E ;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
 
 /* responsive midiya quary */
 /* mobile devises */
-@media screen and (max-width:576px){
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
 
 /* tablet and midiam devises */
-@media screen and (min-width:576px) and (max-width:960px){
-    header{
-        padding: 50px;
-    }
-    nav{
-        flex-direction: column;
-    } 
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
